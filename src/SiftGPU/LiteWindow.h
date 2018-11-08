@@ -20,21 +20,12 @@ public:
     virtual ~LiteWindow()   
 	{  
 	    if(glut_id > 0) 
-<<<<<<< HEAD
-	    {		
-		int argc = 0;
-                char** argv;
-                glutInit(&argc, argv); 
-		glutDestroyWindow(glut_id);  
-	    }
-=======
 	    {
 		int argc = 0;
                 char** argv;
                 glutInit(&argc, argv); 
 	   	glutDestroyWindow(glut_id); 
 	    } 
->>>>>>> 143d97f1e82cf9a16ddb22ce61c29530c60b702f
 	}
     void MakeCurrent()      {  glutSetWindow(glut_id);    }
     void Create(int x = -1, int y = -1, const char* display = NULL)
